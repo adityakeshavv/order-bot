@@ -55,6 +55,35 @@
 - Write a unit test for `get_order_status(order_id)`.<br>
 <br>
 --------------------------------------------------------------------------------------------------------------------------------<br>
+<br>---
+<br>
+### 🗓️ Day 3 — Order Bot Development Diary<br>
+<br>
+**Date:** 2025-05-21<br>
+**Progress:**<br>
+<br>
+* Integrated the `/orders` and `/orders/{order_id}/progress` API endpoints using FastAPI and SQLAlchemy.<br>
+* Ensured data could be queried and returned correctly without using a separate `schemas.py` file.<br>
+* Simplified the FastAPI app to avoid unnecessary complexity and kept everything in `main.py`.<br>
+* Resolved an issue where order parameters were not showing up properly in the Swagger UI.<br>
+* Encountered and recovered from a Git issue where files appeared wiped due to a detached HEAD state — successfully restored the correct commit.<br>
+* Pushed updated and working code to GitHub on the `main` branch.<br>
+<br>
+**Challenges:**<br>
+<br>
+* Faced import issues with SQLAlchemy due to environment misconfiguration.<br>
+* Accidentally triggered a detached HEAD in Git and temporarily lost visible files in VS Code.<br>
+* Swagger UI didn’t show request parameters initially, which required endpoint adjustments.<br>
+<br>
+**Next Steps (Day 4):**<br>
+<br>
+* Implement a `POST /orders` endpoint to insert new orders into the database.<br>
+* Add input validation and cleaner error handling.<br>
+* Optionally, begin work on deleting or updating orders (`DELETE` / `PUT`).<br>
+
+---
+
+
 
 
 
